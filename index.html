@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script defer src="face-api.js"></script>
+        <script defer src="facedemo.js"></script>
+        <style>
+            
+            p {
+                color: red;
+                text-align: center;
+                font-weight: bold;
+                font-size: 50px; 
+            }
+            video {
+                width: 720px;
+                height: 480px
+            }
+        </style>
+    </head>
+    <body>
+        <title>Face API Demo</title>
+
+        <p id="faceEx">Analyzing your Face!</p>
+        <video onloadedmetadata="onPlay(this)" id="webcamVideo" autoplay muted playsinline></video>
+
+    </body>
+
+</html>
+
